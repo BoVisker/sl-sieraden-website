@@ -58,6 +58,22 @@ button {
     }
 }
 
+.producten {
+    .product {
+        border: solid black 1px;
+        border-radius: 100px;
+
+        .image {
+            width: 50%;
+            height: 50%;
+        }
+
+        .text {
+            
+        }
+    }
+}
+
 footer {
     padding-top: 100px;
     display: flex;

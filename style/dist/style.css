@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #F2D7DC;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-right: 2px black solid;
+  border-left: 2px black solid;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+}
+header .home {
+  grid-column-start: 2;
+}
+header .mand {
+  grid-column-start: 16;
+}
+header .login {
+  grid-column-start: 17;
+  display: block;
+}
+header .register {
+  grid-column-start: 18;
+  display: block;
+}
+header .account {
+  grid-column-start: 19;
+  display: block;
+}
+
+button {
+  background-color: #F2D7DC;
+  border: 0px;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.producten .product {
+  border: solid black 1px;
+  border-radius: 100px;
+}
+.producten .product .image {
+  width: 50%;
+  height: 50%;
+}
+footer {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #A29F68;
+  width: 100vw;
+  margin-top: auto;
+}
+footer .copyright {
+  text-align: center;
+  background-color: white;
+  width: 100vw;
+}

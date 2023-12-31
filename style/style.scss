@@ -8,6 +8,10 @@ body {
     margin: 0;
     font-family: sans-serif;
     background-color: $background_roze;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -24,16 +28,22 @@ header {
     }
 
     .mand {
-        grid-column-start: 17;
-
+        grid-column-start: 16;
     }
 
     .login {
-        grid-column-start: 18;
+        grid-column-start: 17;
+        display: block;
     }
 
     .register {
+        grid-column-start: 18;
+        display: block;
+    }
+
+    .account {
         grid-column-start: 19;
+        display: block;
     }
 }
 
@@ -54,9 +64,8 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: $background_groen;
-    position: fixed;
-    bottom: 0;
     width: 100vw;
+    margin-top: auto;
 
     .copyright {
         text-align: center;

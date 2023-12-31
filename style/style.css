@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #F2D7DC;
+}
+
+header {
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-right: 2px black solid;
+  border-left: 2px black solid;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+}
+header .home {
+  grid-column-start: 2;
+}
+header .mand {
+  grid-column-start: 17;
+}
+header .login {
+  grid-column-start: 18;
+}
+header .register {
+  grid-column-start: 19;
+}
+
+button {
+  background-color: #F2D7DC;
+  border: 0px;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+footer {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #A29F68;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+footer .copyright {
+  text-align: center;
+  background-color: white;
+  width: 100vw;
+}/*# sourceMappingURL=style.css.map */

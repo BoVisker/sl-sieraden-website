@@ -1,0 +1,66 @@
+$background_roze: #F2D7DC;
+$background_groen: #A29F68;
+$roze_sterk: #C45B6C;
+$roze_zwak: #E69DAE;
+$groen_roze: #E6D7CF;
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: $background_roze;
+}
+
+header {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-right: 2px black solid;
+    border-left: 2px black solid;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+
+    .home {
+        grid-column-start: 2;
+    }
+
+    .mand {
+        grid-column-start: 17;
+
+    }
+
+    .login {
+        grid-column-start: 18;
+    }
+
+    .register {
+        grid-column-start: 19;
+    }
+}
+
+button {
+    background-color: $background_roze;
+    border: 0px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+}
+
+footer {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background_groen;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+
+    .copyright {
+        text-align: center;
+        background-color: white;
+        width: 100vw;
+    }
+}
